@@ -1,0 +1,131 @@
+ul {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation bar container */
+#navbar {
+  align-items: center;
+  overflow: auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0; /* Add some spacing around the navigation bar */
+}
+
+.navbar-Container{
+  height: 130px;
+}
+
+/* Logo and website name */
+.home-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Navigation links */
+.navbar-links {
+  display: flex;
+}
+
+.navbar-item {
+  margin-right: 10vh;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Highlight active link */
+.navbar-link:hover,
+.navbar-link.active {
+  color: #ffcc00; /* Change to your desired highlight color */
+}
+
+
+#cont{
+  text-align: center;
+}
+
+
+.collapse {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+  
+.form-label {
+  margin-right: 100px;
+}
+  
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+  
+.Clean{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#EleM{
+  background-image: url('./bg-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;   
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+#srimg{
+  width: 20%;
+  height: 20%;    
+}
+
+.table{
+  font-size: 25px;
+}
+
+.tabs{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.footer{
+  font-size: small;
+  text-align: center;
+  background-color: #a006cb;
+  height: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  .collapse {
+    display: inline;
+  }
+}
