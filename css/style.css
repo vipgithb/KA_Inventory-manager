@@ -93,7 +93,7 @@ ul {
 }
 
 #EleM{
-  background-image: url('./bg-image.jpg');
+  background-image: url('../assets/bg-image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;   

@@ -21,7 +21,7 @@ if ($con->connect_errno) {
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body id="EleM">
@@ -30,7 +30,7 @@ if ($con->connect_errno) {
         <div class="navbar-logo">
         </div>
         <div id="cont" style="display:inline-block">
-          <img src="./img1.png" alt="My Logo" style="height: 50px; width: 50px;">
+          <img src="assets/img1.png" alt="My Logo" style="height: 50px; width: 50px;">
           <h3>krishakagro Inventory Manager</h3>
           <!-- Other navigation items -->
         </div>

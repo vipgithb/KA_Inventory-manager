@@ -1,14 +1,7 @@
 <?php
-$message= null;
-$user = "root";
-$servername = "localhost";
-$password = "";
-$dbname = "invm";
-$con = mysqli_connect($servername, $user, $password, $dbname);
-if ($con->connect_errno) {
-    die("Connection Failed " . mysqli_connect_errno());
-}
-?><!DOCTYPE html>
+include('connection.php')
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +10,7 @@ if ($con->connect_errno) {
     <style>
         .body {
             font-family: Arial, sans-serif;
-            background-image: url('./bg-image.jpg');
+            background-image: url('assets/bg-image.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -91,8 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
    
-   $query = 'INSERT INTO LOGINPG values ("'.$username.'", "'.$password.'");';
-  
+   $query = 'INSERT INTO LOGINPG (`username`,`password`) values ("'.$username.'", "'.$password.'");';
    $result = mysqli_query($con,$query);
     // if($result){
     //   $message = "Login Successfull";
