@@ -72,9 +72,6 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
 
@@ -93,7 +90,7 @@
 
     <script>
         function createAccount() {
-            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
             var password = document.getElementById('password').value;
             var confirmPassword = document.getElementById('confirmPassword').value;
 
@@ -105,7 +102,7 @@
             // Here you would typically make a request to your server to create the account
             // For the sake of this example, we'll just log the username and password to the console
             console.log("New Account Details:");
-            console.log("Username: " + username);
+            console.log("email: " + email);
             console.log("Password: " + password);
 
             document.getElementById('message').innerHTML = "Account created successfully!";
